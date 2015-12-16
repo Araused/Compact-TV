@@ -1,0 +1,83 @@
+.menu-carousel .front-image {
+    width: 66.6%;
+    left: calc(50vw - 33.3%);
+    z-index: 300;
+}
+
+.menu-carousel .side-image {
+    width: 25%;
+    z-index: 200;
+    margin-top: 3%;
+}
+
+.menu-carousel .side-image.side-image-before {
+    left: 16.7%;
+}
+
+.menu-carousel .side-image.side-image-after {
+    left: 58.3%;
+}
+
+.menu-carousel .further-image.further-image-before {
+    left: 8%;
+}
+
+.menu-carousel .further-image.further-image-after {
+    left: 75%;
+}
+
+.menu-carousel .further-image {
+    width: 16.7%;
+    z-index: 100;
+    margin-top: 6%;
+}
+
+.menu-carousel {
+    height: 50%;
+    overflow: hidden;
+}
+
+.menu-carousel .front-image,
+.menu-carousel .side-image,
+.menu-carousel .further-image {
+    height: auto;
+    position: absolute;
+}
+
+.menu-carousel .front-image {
+    display: inline-block;
+}
+
+.menu-carousel .side-image,
+.menu-carousel .further-image {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {    
+    .menu-carousel .side-image,
+    .menu-carousel .further-image {
+        display: inline-block;
+    }
+
+    .further-image.hidden-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .menu-carousel .front-image {
+        width: 33.3%;
+        left: calc(50vw - 16.7%);
+    }
+    .menu-carousel .side-image {
+        display: inline-block;
+    }
+
+    .further-image.hidden-image {
+        display: none;
+    }
+    
+    .menu-carousel img {
+        cursor: pointer;
+    }
+}
